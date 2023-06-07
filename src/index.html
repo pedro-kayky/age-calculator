@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/variaveis.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <title>aplicativo calculadora de idade</title>
+</head>
+<body>
+    <main class="card">
+        <div class="container">
+          <form>
+            <div class="form-container">
+            <div class="block">
+                <label for="day">
+                    day
+                </label>
+                <input type="number" id="day" placeholder="DD">
+                <small id="error-day"></small>
+            </div>
+
+            <div class="block">
+                <label for="month">
+                    month
+                </label>
+                <input type="number" id="month" placeholder="MM">
+                <small id="error-month"></small>
+            </div>
+
+            <div class="block">
+                <label for="year">
+                    year
+                </label>
+                <input type="number" id="year" placeholder="YYYY">
+                <small id="error-year"></small>
+            </div>
+            </div>
+            <div class="submit-block">
+                <hr>
+                <button type="submit" id="submit-btn"><img src="/img/images/icon-arrow.png" alt="arrow"></button>
+            </div>
+          </form>  
+       <div class="output">
+        <h1><span id="YY">--</span>years</h1>
+        <h1><span id="MM">--</span>months</h1>
+        <h1><span id="DD">--</span>days</h1>
+       </div>
+    </div>
+    </main>
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
